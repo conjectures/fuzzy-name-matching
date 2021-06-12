@@ -10,7 +10,7 @@ if os.path.exists(filename):
     # pivot_table = df.pivot(index="name", values="total_count")
     # df[::2].plot.bar(x="name", y="total_count")
     # df[1::2].plot.bar(x="name", y="total_count")
-    df.plot.bar(x="name", y="total_count", colormap='Paired')
+    df.plot.bar(x="name", y="total_count", color=['C0', 'C1'])
     plt.show()
 
 # pivot_table = df.pivot(index="year", columns="plurality", values="count")
