@@ -14,7 +14,7 @@ def generate_samples(
     samples = 200000
 
     try:
-        df = pd.read_csv(filename).head(num_slice)
+        df = pd.read_csv(input_file).head(num_slice)
         total_name_occurences = df.total_count.sum()
         df.total_count = (df.total_count / total_name_occurences) * 100
 
